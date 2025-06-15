@@ -5,17 +5,50 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+  
+  
+   char torre[50];
+   char bispo[50];
+   char rainha[50];
+   int i, peca;
+ 
+   
+   printf("ESCOLHA A VARIVEL PARA SABER QUANTAS VEZES ELA MOVE...\n");
+   printf("1. TORRE\n");
+     printf("2. BISPO\n");
+       printf("3. RAINHA\n");
+            scanf("%d", &peca);   
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+            // switch para selecionar o tipo de peça
+   switch (peca)
+   {
+            case 1:
+                for ( i = 1; i <= 5; i++)
+                    {
+                            printf("Direita\n", torre);
+                    }
+    break;
+            case 2:
+                        for ( i = 1; i <= 5; i++)
+                    {
+                            printf("Cima, Direita\n", bispo);
+                    }
+    break;
+            case 3:
+                        for ( i = 1; i <= 8; i++)
+                    {
+                            printf("Esquerda\n", rainha);
+                    }
+    break;
+            default: 
+                printf ("Opção invalida...");
+                break;
+   }
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+
+
+
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
