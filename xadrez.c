@@ -13,7 +13,7 @@ int main() {
    int i, peca;
  
    
-   printf("ESCOLHA A VARIVEL PARA SABER QUANTAS VEZES ELA MOVE...\n");
+   printf("ESCOLHA A VARIVEL PARA SABER QUANTAS VEZES ELA SE MOVE...\n");
    printf("1. TORRE\n");
      printf("2. BISPO\n");
        printf("3. RAINHA\n");
